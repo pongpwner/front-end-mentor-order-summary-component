@@ -4,12 +4,24 @@
 .App {
   display: flex;
   flex-direction: column;
-  background-image: url("./images/pattern-background-desktop.svg");
+  background-image: url("./images/pattern-background-mobile.svg");
+
   background-repeat: no-repeat;
-  background-size: 100vw 50vh;
-  background-color: hsl(225, 100%, 98%);
+  background-size: 100vw 25vh;
+  background-color: #e0e8fd;
   height: 100vh;
 }
 .attribution {
   justify-content: flex-end;
+}
+@media only screen and (min-width: 400px) {
+  .App {
+    display: flex;
+    flex-direction: column;
+    background-image: url("./images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 100vw 50vh;
+    background-color: hsl(225, 100%, 98%);
+    height: 100vh;
+  }
 }
