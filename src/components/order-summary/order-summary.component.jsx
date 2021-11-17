@@ -19,11 +19,11 @@ const OrderSummary = () => (
         <span className="plan-price">
           <span>Annual Plan</span> <span>$59.99/year </span>
         </span>
-        <button className="change">Change</button>
+        <button type='button' className="change">Change</button>
       </div>
       <span className="buttons">
-        <CustomButton label="Proceed to Payment" />
-        <CustomButton label="Cancel Order" cancel />
+        <CustomButton type='submit' label="Proceed to Payment" />
+        <CustomButton type='button' label="Cancel Order" cancel />
       </span>
     </div>
   </div>

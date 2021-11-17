@@ -9,9 +9,12 @@
   background-repeat: no-repeat;
   background-size: 100vw 25vh;
   background-color: #e0e8fd;
-  height: 100vh;
+  height:100%;
+    min-height: 100vh;
 }
 .attribution {
+  bottom: 0;
+  
   justify-content: flex-end;
 }
 @media only screen and (min-width: 400px) {
@@ -23,5 +26,16 @@
     background-size: 100vw 50vh;
 
     height: 100vh;
+  }
+}
+@media (orientation: landscape) {
+  .App {
+    display: flex;
+    flex-direction: column;
+    background-image: url("./images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 100vw 50vh;
+    height:100%;
+    min-height: 100vh;
   }
 }

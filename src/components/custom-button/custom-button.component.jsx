@@ -1,8 +1,8 @@
 import React from "react";
 import "./custom-button.styles.scss";
 
-const CustomButton = ({ label, cancel, ...otherProps }) => (
-  <button className={`custom-button ${cancel ? "cancel" : ""} `}>
+const CustomButton = ({ label, type, cancel, ...otherProps }) => (
+  <button type={type} className={`custom-button ${cancel ? "cancel" : ""} `}>
     {label}
   </button>
 );
